@@ -16,4 +16,12 @@ describe("Jest Snapshot testing suite", () => {
     component.getInstance().increment();
     expect(component.toJSON()).toMatchSnapshot();
   });
+
+  it("Should render count decrements", () => {
+    const component = renderer.create(<Counter />);
+    component.getInstance().increment();
+    component.getInstance().increment();
+    component.getInstance().decrement();
+    expect(component.toJSON()).toMatchSnapshot();
+  });
 });
