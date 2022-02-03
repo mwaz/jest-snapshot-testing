@@ -19,4 +19,4 @@ jobs:
           name: Jest snapshot tests
           command: npm test
       - store_artifacts:
-          path: ~/repo/Snapshot
+          path: ~/repo/jest-snapshot-testing
