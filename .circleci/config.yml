@@ -16,7 +16,7 @@ jobs:
           paths:
             - ./node_modules
       - run:
-          name: Jest snapshot test
+          name: Jest snapshot tests
           command: npm test
       - store_artifacts:
           path: ~/repo/Snapshot
